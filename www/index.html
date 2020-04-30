@@ -14,11 +14,13 @@
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src *; img-src * 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *" /> -->
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="js/store.legacy.min.js.js"></script>
+    <script type="text/javascript" src="js/store.legacy.min.js"></script>
+
 
     <title>MuiscList</title>
 </head>
@@ -28,12 +30,12 @@
         
     <div id="container">
         <h1>MusicList App</h1>
-        <label for="artist">Artist</label>
-        <input type="text" id="artist" />
-        <label for="song">Song</label>
-        <input type="text" id="song" />
-        <button id="btnAdd">Add To List</button>
-        <button id="btnDisplay">Display List</button>
+        <label for="artist">Artist</label><br>
+        <input type="text" id="artist" /><br>
+        <label for="song">Song</label><br>
+        <input type="text" id="song" /><br>
+        <button id="btnAdd">Add To List</button><br>
+        <button id="btnDisplay">Display List</button><br>
         <button id="btnClear">Clear List</button>
 
         <div id="listArea"></div>
